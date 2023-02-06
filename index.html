@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Portfolio </title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css" />
+    <style>
+        .terminal {
+            --background-color: #000000;
+            --color: #00FF00;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $('body').terminal({
+            help: function () {
+                this.echo('\nCommands:\n'+
+                    'help - show this message\n'+
+                    'projects <name> - shows all projects or the projects passed as argument in <name>\n');
+            },
+            projects: function (...name) {
+                this.echo('\nRicardo\'s Projects:\n')
+                if(name.length == 0){
+                    this.echo('ALL PROJECTS\n');
+                }else{
+                    let i=0;
+                    while(i<name.length){
+                        this.echo(get_project(name[i]));
+                        i++;
+                    }
+                }
+            }
+        }, {
+            greetings:  ' ______     __     ______     ______     ______     _____     ______                                                              \n'+
+                        '/\\  == \\   /\\ \\   /\\  ___\\   /\\  __ \\   /\\  == \\   /\\  __-.  /\\  __ \\                                                \n'+
+                        '\\ \\  __<   \\ \\ \\  \\ \\ \\____  \\ \\  __ \\  \\ \\  __<   \\ \\ \\/\\ \\ \\ \\ \\/\\ \\                                     \n'+
+                        ' \\ \\_\\ \\_\\  \\ \\_\\  \\ \\_____\\  \\ \\_\\ \\_\\  \\ \\_\\ \\_\\  \\ \\____-  \\ \\_____\\                                 \n'+
+                        '  \\/_/ /_/   \\/_/   \\/_____/   \\/_/\\/_/   \\/_/ /_/   \\/____/   \\/_____/                                                   \n'+
+                        ' ______     __         __     __    __   ______     __     ______     ______    ___      ______                                    \n'+
+                        '/\\  __ \\   /\\ \\       /\\ \\   /\\ \\  / /  /\\  ___\\   /\\ \\   /\\  == \\   /\\  __ \\  /\\  \\    /\\  ___\\               \n'+
+                        '\\ \\ \\/\\ \\  \\ \\ \\____  \\ \\ \\  \\ \\ \\/ /   \\ \\  __\\   \\ \\ \\  \\ \\  __<   \\ \\  __ \\ \\ \\__\\   \\ \\___  \\  \n'+
+                        ' \\ \\_____\\  \\ \\_____\\  \\ \\_\\  \\ \\__/     \\ \\_____\\  \\ \\_\\  \\ \\_\\ \\_\\  \\ \\_\\ \\_\\ \\/__/    \\/\\_____\\  \n'+
+                        '  \\/_____/   \\/_____/   \\/_/   \\/_/       \\/_____/   \\/_/   \\/_/ /_/   \\/_/\\/_/           \\/_____/                       \n'+
+                        ' ______   ______     ______     ______   ______   ______     __         __     ______                                             \n'+
+                        '/\\  == \\ /\\  __ \\   /\\  == \\   /\\__  _\\ /\\  ___\\ /\\  __ \\   /\\ \\       /\\ \\   /\\  __ \\                          \n'+
+                        '\\ \\  _-/ \\ \\ \\/\\ \\  \\ \\  __<   \\/_/\\ \\/ \\ \\  __\\ \\ \\ \\/\\ \\  \\ \\ \\____  \\ \\ \\  \\ \\ \\/\\ \\            \n'+
+                        ' \\ \\_\\    \\ \\_____\\  \\ \\_\\ \\_\\    \\ \\_\\  \\ \\_\\    \\ \\_____\\  \\ \\_____\\  \\ \\_\\  \\ \\_____\\             \n'+
+                        '  \\/_/     \\/_____/   \\/_/ /_/     \\/_/   \\/_/     \\/_____/   \\/_____/   \\/_/   \\/_____/                                 \n',
+            prompt: '~/Portfolio $ ',
+            checkArity: false
+
+        });
+        
+        
+        function get_project(name){
+            let projects=['cipy'];
+            if (projects.includes(name)){
+                return(name+':\ninfo...\n');
+            }else{
+                return(name +':\nProject not found\n');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
