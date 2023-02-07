@@ -87,7 +87,7 @@ async function get_type_hist(type) {
 
     //Get History
     history.history.filter(x => x.type===type)
-               .map(x => hist.push(hist_to_str(x,false)));
+                   .map(x => hist.push(hist_to_str(x,false)));
     return hist;
 }
 
@@ -95,7 +95,7 @@ function hist_to_str(hist, cur){
     let h='';
     
     h+= hist.name + '\n' +
-        '-'.repeat(x.name.length) +
+        '-'.repeat(hist.name.length) +
         '\nLocation            : ' + hist.place +
         '\nType                : ' + hist.type +
         '\nStart Date          : ' + hist.start.month + ' ' + hist.start.year;

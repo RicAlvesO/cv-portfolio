@@ -7,7 +7,7 @@
                 "month":"September",
                 "year":"2020"
             },
-            "expected-end":{
+            "end":{
                 "month":"June",
                 "year":"2022"
             }
@@ -21,7 +21,7 @@
                 "month": "September",
                 "year": "2017"
             },
-            "expected-end": {
+            "end": {
                 "month": "June",
                 "year": "2020"
             }
@@ -34,7 +34,7 @@
                 "month": "September",
                 "year": "2012"
             },
-            "expected-end": {
+            "end": {
                 "month": "June",
                 "year": "2017"
             }
