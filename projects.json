@@ -5,7 +5,9 @@
             "description":"A command line interface for Todoist",
             "url":"https://github.com/RicAlvesO/todoist-cli"
         },{
-
+            "name":"Gerador-de-Testes",
+            "description":"General programming exam generator",
+            "url":"https://github.com/RicAlvesO/Gerador-de-Testes"
         }
     ]
 }
