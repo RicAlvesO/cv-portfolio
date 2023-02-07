@@ -57,8 +57,10 @@
         
         
         function get_project(name){
-            let projects=['cipy'];
-            if (projects.includes(name)){
+            projects= fetch('https://raw.githubusercontent.com/RicAlvesO/CV_Portfolio/master/projects.json')
+                .then((response) => response.json());
+            console.log(projects);
+            if (projects.All.includes(name)){
                 return(name+':\ninfo...\n');
             }else{
                 return(name +':\nProject not found\n');

@@ -1,5 +1,5 @@
 {
-    "All":[
+    "all":[
         {
             "name":"todoist-cli",
             "description":"A command line interface for Todoist",
