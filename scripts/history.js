@@ -69,7 +69,7 @@ async function get_total_history() {
     hist.push(hist_to_str(h,true));
 
     //Get History
-    history.all.map(x => hist.push(hist_to_str(x)));
+    history.all.map(x => hist.push(hist_to_str(x,false)));
     return hist;
 }
 
@@ -86,7 +86,7 @@ async function get_type_hist(type) {
     }
 
     //Get History
-    history.all.filter(x=> x.type===type)
+    history.all.filter(x => x.type===type)
                .map(x => hist.push(hist_to_str(x,false)));
     return hist;
 }
