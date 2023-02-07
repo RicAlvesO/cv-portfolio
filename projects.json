@@ -1,13 +1,58 @@
 {
     "all":[
         {
+            "name":"cv-portfolio",
+            "description":"My portfolio website",
+            "url":"https://github.com/RicAlvesO/cv-portfolio",
+            "language":"javascript"
+        },
+        {
+            "name": "gerador-de-testes",
+            "description": "General programming exam generator",
+            "url": "https://github.com/RicAlvesO/gerador-de-testes",
+            "language": "python"
+        },
+        {
             "name":"todoist-cli",
             "description":"A command line interface for Todoist",
-            "url":"https://github.com/RicAlvesO/todoist-cli"
-        },{
-            "name":"Gerador-de-Testes",
-            "description":"General programming exam generator",
-            "url":"https://github.com/RicAlvesO/Gerador-de-Testes"
+            "url":"https://github.com/RicAlvesO/todoist-cli",
+            "language":"python"
+        },
+        {
+            "name": "bc-snippets",
+            "description": "Snippet extension for C language in Visual Studio Code",
+            "url": "https://github.com/RicAlvesO/bc-snippets",
+            "language":"shell"
+        },
+        {
+            "name":"dotfiles",
+            "description":"My dotfiles configuration for Manjaro Linux with i3wm",
+            "url":"https://github.com/RicAlvesO/.dotfiles",
+            "language":"shell"
+        },
+        {
+            "name":"cypher-pe",
+            "description":"A local password encryptor",
+            "url":"https://github.com/RicAlvesO/cypher-pe",
+            "language":"python"
+        },
+        {
+            "name":"magic-8ball",
+            "description":"GUI Magic 8Ball written in Python with Tkinter",
+            "url":"https://github.com/RicAlvesO/magic-8ball",
+            "language":"python"
+        },
+        {
+            "name": "sp-playlist-maker",
+            "description": "A playlist generator for Spotify using the Spotify API",
+            "url": "https://github.com/RicAlvesO/sp-playlist-maker",
+            "language": "python"
+        },
+        {
+            "name":"sword",
+            "description":"Hackathon project for the 2021 edition of 'SEI - Semana de Engenharia Informática'",
+            "url":"https://github.com/RicAlvesO/sword",
+            "language":"c"
         }
     ]
 }
