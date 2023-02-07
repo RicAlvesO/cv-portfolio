@@ -9,8 +9,9 @@ function help(...args) {
     var output = '';
     if (args.length == 0) {
         output+='\nCommands:\n\n' +
-                'help [commands]     - shows this message, if commmands are provided shows specific information on that command\n' +
-                'projects [options]  - shows information on projects developed\n';
+                'help [commands]     - shows this message, if commmands are provided shows specific information on that command\n'+
+                'projects [options]  - shows information on projects developed\n'+
+                'cv                  - shows the Curriculum Vitae pdf in a new window\n';
     } else {
         i=0;
         while(i<args.length){
