@@ -20,13 +20,13 @@ async function history(...args) {
                 
                 //Show help
                 case '-h':
-                    help('history');
+                    this.echo(help('history'));
                     break;
                 
                 //Show all projects
                 case '-a':
                     this.echo('Ricardo\'s History:\n')
-                    var hist = await get_all_projects();
+                    var hist = await get_total_history();
                     for (p in hist) {
                         this.echo(hist[p]);
                     }
@@ -64,8 +64,8 @@ async function get_total_history() {
     const history = await update_history();
 
     //Get Current 
-    let h=history.current;
-    let hist = [];
+    h=history.current;
+    hist = [];
     hist.push(hist_to_str(h,true));
 
     //Get History
@@ -79,8 +79,8 @@ async function get_type_hist(type) {
     const history = await update_history();
 
     //Get Current 
-    let hist=[];
-    let h=history.current;
+    hist=[];
+    h=history.current;
     if (h.type == type){
         hist.push(hist_to_str(h,true));
     }
@@ -92,7 +92,7 @@ async function get_type_hist(type) {
 }
 
 function hist_to_str(hist, cur){
-    let h='';
+    h='';
     
     h+= hist.name + '\n' +
         '-'.repeat(hist.name.length) +
@@ -107,4 +107,5 @@ function hist_to_str(hist, cur){
     }
     
     h+= hist.end.month + ' ' + hist.end.year + '\n';
+    return h;
 }
