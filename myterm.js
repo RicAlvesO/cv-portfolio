@@ -3,7 +3,8 @@ $('body').terminal({
         this.echo(help(...args));
     },
     projects: projects,
-    cv: cv
+    cv: cv,
+    history: history
 }, {
     greetings: ' ______     __     ______     ______     ______     _____     ______\n' +
         '/\\  == \\   /\\ \\   /\\  ___\\   /\\  __ \\   /\\  == \\   /\\  __-.  /\\  __ \\\n' +

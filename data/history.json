@@ -1,0 +1,43 @@
+{
+    "current":{
+            "name":"Licenciatura Engenharia Informática",
+            "place":"Universidade do Minho",
+            "type":"University",
+            "start":{
+                "month":"September",
+                "year":"2020"
+            },
+            "expected-end":{
+                "month":"June",
+                "year":"2022"
+            }
+    },
+    "history":[
+        {
+            "name":"Ensino Secundário - Curso de Ciências e Tecnologias",
+            "place":"Escola Secundária de Barcelos",
+            "type":"High School",
+            "start": {
+                "month": "September",
+                "year": "2017"
+            },
+            "expected-end": {
+                "month": "June",
+                "year": "2020"
+            }
+        },
+        {
+            "name":"Ensino Básico",
+            "place":"Alfacoop",
+            "type":"School",
+            "start": {
+                "month": "September",
+                "year": "2012"
+            },
+            "expected-end": {
+                "month": "June",
+                "year": "2017"
+            }
+        }
+    ]
+}

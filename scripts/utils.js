@@ -11,6 +11,7 @@ function help(...args) {
         output+='\nCommands:\n\n' +
                 'help [commands]     - shows this message, if commmands are provided shows specific information on that command\n'+
                 'projects [options]  - shows information on projects developed\n'+
+                'history [options]   - shows information on school/career history\n'+
                 'cv                  - shows the Curriculum Vitae pdf in a new window\n';
     } else {
         i=0;
@@ -22,6 +23,13 @@ function help(...args) {
                             '-h                  - shows this message\n' +
                             '-a                  - shows all projects\n' +
                             '-p [projects]       - shows the information on the projects with the names provided\n';
+                    break;
+                case 'history':
+                    output += '\nUsage: history [options]\n\n' +
+                        'Options:\n' +
+                        '-h                  - shows this message\n' +
+                        '-a                  - shows all history entries\n' +
+                        '-t <type>           - shows the history entries of certain <type>\n';
                     break;
                 default:
                     output +='\n[Error] Unknown command \'' + args[i] + '\', type \'help\' for more information on available commands.\n';
