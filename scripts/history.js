@@ -87,7 +87,7 @@ async function get_type_hist(type) {
 
     //Get History
     history.history.filter(x => x.type===type)
-                   .map(x => hist.push(hist_to_str(x,false)));
+                   .map(y => hist.push(hist_to_str(y,false)));
     return hist;
 }
 
