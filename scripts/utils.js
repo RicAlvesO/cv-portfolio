@@ -12,7 +12,8 @@ function help(...args) {
                 'help [commands]     - shows this message, if commmands are provided shows specific information on that command\n'+
                 'projects [options]  - shows information on projects developed\n'+
                 'history [options]   - shows information on school/career history\n'+
-                'cv                  - shows the Curriculum Vitae pdf in a new window\n';
+                'cv                  - shows the Curriculum Vitae pdf in a new window\n'+
+                'tldr                - shows brief summary about me';
     } else {
         i=0;
         while(i<args.length){
@@ -42,4 +43,8 @@ function help(...args) {
 
 function cv(){
     window.open('https://raw.githubusercontent.com/RicAlvesO/cv-portfolio/master/cv.pdf','_blank');
+}
+
+function tldr(){
+    return 'I am a Computer Science student at the University of Minho, currently in my 3rd year. I am interested in security, machine learning and data science.';
 }

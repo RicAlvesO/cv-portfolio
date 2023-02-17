@@ -2,8 +2,9 @@ $('body').terminal({
     help:function(...args){
         this.echo(help(...args));
     },
-    projects: projects,
     cv: cv,
+    tldr: tldr,
+    projects: projects,
     history: history
 }, {
     greetings: ' ______     __     ______     ______     ______     _____     ______\n' +
