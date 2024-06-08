@@ -42,7 +42,7 @@ function help(...args) {
 }
 
 function cv(){
-    window.open('https://raw.githubusercontent.com/RicAlvesO/cv-portfolio/master/cv.pdf','_blank');
+    window.open('https://raw.githubusercontent.com/RicAlvesO/cv-portfolio/master/docs/cv.pdf','_blank');
 }
 
 function tldr(){

@@ -1,6 +1,53 @@
 {
-    "current":{
-            "name":"Licenciatura Engenharia Informática",
+    "current":[
+		{
+            "name":"Master's Degree in 'Engenharia Informática'",
+            "place":"Universidade do Minho",
+            "type":"University",
+			"details":"Master's degree in Cybersecurity and Data Analysis",
+			"tags":"Cybersecurity, Machine learning, Data Science, Data Analysis, Vulnerability Analysis, Cryptography, Secure Development, Security Standards, Data Mining, Relational and Non-Relational Databases, Big Data",
+            "start":{
+                "month":"September",
+                "year":"2023"
+            },
+            "end":{
+                "month":"June",
+                "year":"2025"
+            }
+		},
+		{
+            "name":"Working in Eurotux's SOC Team",
+            "place":"Eurotux Braga",
+            "type":"Job",
+			"role":"Junior Cybersecurity Engineer",
+			"details":"Currently working on a SOC. My work entails developing tools to further enhance the capabilities of cybersecurity analysts, varied security analysis, cybersecurity tests, among other tasks.",
+			"tags":"Cybersecurity, SOC, Analyst, Developer, SIEM, Threat Intelligence, Dark Web Analysis, Phishing Campaign, Artificial Intelligence",
+            "start":{
+                "month":"October",
+                "year":"2023"
+            }
+		}
+	],
+    "history":[
+        {
+            "name":"Eurotux Summer Internship",
+            "place":"Eurotux Braga",
+            "type":"Internship",
+			"details":"Internship focused on Cybersecurity and Artificial Intelligence. I developed a platform supporting machine learning models to detect irregular behaviour on operating systems and web servers. The focus of this project is to help security analysts detect dangerous patterns and prevent possible attacks.",
+			"tags":"AI, Cybersecurity, SIEM, UEBA, UBA, Data Science, Logs, Analyst, Operating Systems, Web Servers, Machine Learning",
+			"report":"",
+			"mentor":"",
+            "start":{
+                "month":"July",
+                "year":"2023"
+            },
+            "end":{
+                "month":"September",
+                "year":"2023"
+            }
+		},
+        {
+            "name":"Degree in 'Engenharia Informática'",
             "place":"Universidade do Minho",
             "type":"University",
             "start":{
@@ -9,12 +56,11 @@
             },
             "end":{
                 "month":"June",
-                "year":"2022"
+                "year":"2023"
             }
-    },
-    "history":[
+		},
         {
-            "name":"Ensino Secundário - Curso de Ciências e Tecnologias",
+            "name":"Hidh School - Science and Technology Course",
             "place":"Escola Secundária de Barcelos",
             "type":"High School",
             "start": {
@@ -27,7 +73,7 @@
             }
         },
         {
-            "name":"Ensino Básico",
+            "name":"Basic Education",
             "place":"Alfacoop",
             "type":"School",
             "start": {

@@ -64,11 +64,10 @@ async function get_total_history() {
     const history = await update_history();
 
     //Get Current 
-    h=history.current;
     hist = [];
-    hist.push(hist_to_str(h,true));
 
     //Get History
+    history.current.map(x => hist.push(hist_to_str(x,true)));
     history.history.map(x => hist.push(hist_to_str(x,false)));
     return hist;
 }
@@ -97,15 +96,32 @@ function hist_to_str(hist, cur){
     h+= hist.name + '\n' +
         '-'.repeat(hist.name.length) +
         '\nLocation            : ' + hist.place +
-        '\nType                : ' + hist.type +
-        '\nStart Date          : ' + hist.start.month + ' ' + hist.start.year;
+        '\nType                : ' + hist.type;
+
+    if ('role' in hist){
+        h+= '\nRole                : ' + hist.role;
+	}    
+    if ('details' in hist){
+        h+= '\nDetails             : ' + hist.details;
+	}    
+    if ('tags' in hist){
+        h+= '\nTags                : ' + hist.tags;
+	}    
+    if ('report' in hist){
+        h+= '\nReport              : ' + hist.report;
+	}    
+    if ('mentor' in hist){
+        h+= '\nMentor\'s Feedback   : ' + hist.mentor;
+	}    
+    h+= '\nStart Date          : ' + hist.start.month + ' ' + hist.start.year;
     
-    if (cur===true){
-        h+= '\nExpected End Date   : ';
-    } else {
-        h+= '\nEnd Date            : ';
-    }
-    
-    h+= hist.end.month + ' ' + hist.end.year + '\n';
+    if ('end' in hist){
+		if (cur===true){
+		    h+= '\nExpected End Date   : ';
+		} else {
+            h+= '\nEnd Date            : ';
+		}
+		h+= hist.end.month + ' ' + hist.end.year + '\n';
+	}
     return h;
 }
