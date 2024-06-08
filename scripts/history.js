@@ -67,9 +67,9 @@ async function get_total_history() {
     hist = [];
 
     //Get History
-    hist.push('\n+ ONGOING +\n')
+    hist.push('+ ONGOING +\n')
     history.current.map(x => hist.push(hist_to_str(x,true)));
-    hist.push('\n+ FINISHED +\n')
+    hist.push('\n- FINISHED -\n')
     history.history.map(x => hist.push(hist_to_str(x,false)));
     return hist;
 }

@@ -46,5 +46,5 @@ function cv(){
 }
 
 function tldr(){
-    return 'I am a Computer Science student at the University of Minho, currently in my 3rd year. I am interested in security, machine learning and data science.';
+    return 'I am a Masters student of Computer Engineering at the University of Minho and Junior CyberSecurity Engeneer at Eurotux. I am interested in cybersecurity, machine learning and data science. Current my main focus is improving both red and blue team skills, focusing mostly in penetration testing and incident response. In the realm of artificial intelligence my focus is developing tools to help improve produtivity and decision making rather than fully automated and unsupervised work.';
 }
