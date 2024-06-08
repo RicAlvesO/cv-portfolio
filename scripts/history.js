@@ -79,9 +79,13 @@ async function get_type_hist(type) {
 
     //Get Current 
     hist=[];
+
+    hist.push('\n+ ONGOING +\n')
+
     history.current.filter(x => x.type==type)
                    .map(y => hist.push(hist_to_str(y,true)));
 
+    hist.push('\n+ FINISHED +\n')
     //Get History
     history.history.filter(x => x.type===type)
                    .map(y => hist.push(hist_to_str(y,false)));
