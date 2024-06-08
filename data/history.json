@@ -35,8 +35,8 @@
             "type":"Internship",
 			"details":"Internship focused on Cybersecurity and Artificial Intelligence. I developed a platform supporting machine learning models to detect irregular behaviour on operating systems and web servers. The focus of this project is to help security analysts detect dangerous patterns and prevent possible attacks.",
 			"tags":"AI, Cybersecurity, SIEM, UEBA, UBA, Data Science, Logs, Analyst, Operating Systems, Web Servers, Machine Learning",
-			"report":"",
-			"mentor":"",
+			"report":"https://raw.githubusercontent.com/RicAlvesO/cv-portfolio/master/docs/Eurotux_Internship_Report.pdf",
+			"mentor":"https://raw.githubusercontent.com/RicAlvesO/cv-portfolio/master/docs/Eurotux_Internship_Feedback.pdf",
             "start":{
                 "month":"July",
                 "year":"2023"
